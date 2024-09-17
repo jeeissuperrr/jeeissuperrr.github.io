@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(kimi-no-nawa.jpeg);
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.ringkasan-pesanan {
+    background-color: white;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.ringkasan-pesanan h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-ringkasan {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.kolom-ringkasan {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.kolom-ringkasan p {
+    margin-bottom: 10px;
+}
+
+.pemisah {
+    width: 1px;
+    background-color: #ddd;
+    margin: 0 10px;
+}
+
+.barang-pesanan {
+    margin-bottom: 20px;
+}
+
+.barang-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.barang-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.detail-barang {
+    flex: 1;
+}
+
+.nama-barang {
+    font-weight: bold;
+}
+
+.info-barang {
+    color: #666;
+    font-size: 14px;
+}
+
+.harga-barang {
+    color: #333;
+    font-weight: bold;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 15px 0;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.jumlah-total {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-ringkasan {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tombol {
+    background-color: gold;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tombol:hover {
+    background-color: gold;
+}
+
+@media (max-width: 768px) {
+ .wrapper { 
+    padding: 10px;  
+ }
+
+ .header-ringkasan {
+    flex-direction: column;
+ }
+
+ .barang-item {
+    flex-direction: column;
+    align-items: flex-start;
+ }
+ .tombol {
+    width: 100%;
+ }
+    
+}
+
+@media (max-width: 425px) {
+    body {
+        font-size: 14px;
+
+    }
+    .header-ringkasan {
+        flex-direction: column;
+    }
+    .tombol {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
+
