@@ -168,7 +168,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <div class="button-group">
         <a href="checkout.php" class="button">Checkout</a>
-        <a href="index.php" class="button secondary">Kembali</a>
+        <a href="index.html" class="button secondary">Kembali</a>
     </div>
 </main>
 
